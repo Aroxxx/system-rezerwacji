@@ -40,7 +40,7 @@ if (isset($_GET["name"]) && isset($_GET["tel"]) && isset($_GET["mail"]) &&  isse
   if ($day == 1)
   {
 $query = $pdo -> prepare('SELECT name, miejsce  FROM magik WHERE name = "'.$name.'"');
-				//$query -> bindValue(':day', $day );
+				//$query -> binddValue(':day', $day );
 				$query -> execute();
 $wynik = '';
 $godzina = '10:00';
